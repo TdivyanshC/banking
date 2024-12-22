@@ -21,7 +21,8 @@ import { authformSchema } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { getLoggedInUser, signIn, signUp } from '@/lib/actions/user.actions';
-import { PlaidLink } from 'react-plaid-link';
+import PlaidLink from './PlaidLink';
+
 
 
 
@@ -117,7 +118,7 @@ const AuthForm = ({type} : {type: string}) => {
         <>
         <div className='flex gap-4'>
         <CustomInput
-        control={form.control} name='firstName' label='First Name' placeholder='Enter your first name'/>
+        control={form.control} name='firstName' label='First Name' placeholder='Enter your first name' />
         <CustomInput
         control={form.control} name='lastName' label='Last Name' placeholder='Enter your last name'/>
         </div>

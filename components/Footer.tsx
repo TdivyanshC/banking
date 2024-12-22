@@ -18,22 +18,25 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer flex flex-col">
       {/* User Name */}
+      <div className='content'>
+
       <div className={type === 'mobile' ? 'footer_name-mobile' : 'footer_name'}>
         <p className="text-xl font-bold text-gray-700">
-          {user?.name[0] || 'N/A'}
+          {user?.firstName[0] || 'N/A'}
         </p>
       </div>
 
       {/* User Email */}
       <div className={type === 'mobile' ? 'footer_email-mobile' : 'footer_email'}>
-        <h1 className="text-14 truncate text-gray-700 font-semibold">
-          {user?.name || 'No user'}
+        <h1 className="text-[14px] truncate text-gray-700 font-semibold">
+          {user?.firstName || 'No user'}
         </h1>
-        <p className="text-14 truncate font-normal text-gray-600">
+        <p className="text-[10px] truncate font-normal text-gray-600">
           {user?.email || 'No email'}
         </p>
+      </div>
       </div>
 
       {/* Logout Button */}
