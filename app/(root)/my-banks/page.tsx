@@ -56,7 +56,7 @@ const MyBanks = async () => {
       </section>
     );
   } catch (error) {
-    console.error('Error loading bank accounts:', error);
+    // console.error('Error loading bank accounts:', error);
     return (
       <section className="flex justify-center items-center h-screen">
         <p className="text-lg font-medium">An error occurred while loading data.</p>
