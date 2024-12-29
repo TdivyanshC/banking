@@ -18,7 +18,7 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
   };
 
   return (
-    <footer className="footer flex flex-col">
+    <footer className="footer flex ">
       {/* User Name */}
       <div className='content'>
 
