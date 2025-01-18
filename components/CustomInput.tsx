@@ -9,7 +9,8 @@ const formSchema = authformSchema('sign-up');
 
 interface CustomInput {
     control: Control<z.infer<typeof formSchema>> 
-    name: FieldPath<z.infer<typeof formSchema>> ,
+    name: FieldPath<z.infer<typeof formSchema>> 
+    id: string,
     label: string,
     placeholder: string
 }

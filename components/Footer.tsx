@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'; // Use `next/navigation` for `app` 
 import React from 'react';
 
 interface FooterProps {
-  user?: { name: string; email: string }; // Ensure user props are optional and typed
+  user?: { firstName: string; email: string }; // Ensure user props are optional and typed
   type?: 'desktop' | 'mobile';
 }
 
